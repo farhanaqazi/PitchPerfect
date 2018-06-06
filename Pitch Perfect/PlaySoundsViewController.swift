@@ -72,6 +72,9 @@ class PlaySoundsViewController: UIViewController {
         stopButton.imageView?.contentMode = .scaleAspectFit
 
         // Do any additional setup after loading the view.
+        
+        
+        
     }
     
     

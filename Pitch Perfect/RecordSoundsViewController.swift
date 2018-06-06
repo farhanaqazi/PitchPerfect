@@ -25,6 +25,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         stopRecordingButton.isEnabled = false
+       
         /// In order to Disable this from the begining
         // as soon as the app loads
         // Do any additional setup after loading the view, typically from a nib.
