@@ -26,10 +26,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qg-XH-7en">
-                                <rect key="frame" x="155.5" y="407.5" width="64" height="64"/>
+                                <rect key="frame" x="155" y="407.5" width="65" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="jc7-RG-gIi"/>
-                                    <constraint firstAttribute="height" constant="64" id="sNe-C7-zxk"/>
+                                    <constraint firstAttribute="width" constant="65" id="jc7-RG-gIi"/>
+                                    <constraint firstAttribute="height" constant="65" id="sNe-C7-zxk"/>
                                 </constraints>
                                 <state key="normal" image="Stop"/>
                                 <connections>
