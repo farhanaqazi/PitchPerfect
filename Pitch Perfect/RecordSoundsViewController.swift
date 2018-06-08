@@ -17,6 +17,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     var audioRecorder: AVAudioRecorder! // audio recorder property, This property gives the view controller the ability
     // to ,1-Use, 2-Reference, in multiple purpose as the Ref of the recording will be used in 2 differnt spots
     /// Beinging of rec and Stop Rec
+   
+    
+    // MARK: IBOutlet defined
     
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopRecordingButton: UIButton!
@@ -36,7 +39,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         print("viewWillAppear Called")
     }
 
-    //Refactor methos will go below vvvvvvvvvv
+    // MARK: Refactor method
     
     func configureUI(recording enable: Bool, labelString: String)
     {
@@ -55,13 +58,14 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBAction func recordAudio(_ sender: Any) {
         print("Record Button was pressed")
         
-//=============================Refector Method Call==========================
+// MARK: Refector Method Call 1
+        
         configureUI(recording: true, labelString: "Recording in progress")
         
 //=============================//=============================
         
         
-//xxxxxxxxxxxxxxxxxxxxxxxxxxOLD Stuffxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// MARK: OLD Stuff 1
         
 //        recordingLabel.text = "Recording in Progress"
 //        stopRecordingButton.isEnabled = true // ok to rec after stop rec
@@ -97,13 +101,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         print("stop recording button was pressed")
  
         
-//=============================Refector Method Call==========================
+// MARK: Refector Method Call 2
 
         configureUI(recording: false, labelString: "Tap to Record")
         
 //=============================//=============================
         
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxOLD STUFF xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// MARK: OLD STUFF 2
         
 //        recordButton.isEnabled = true // to make the next recording possible
 //        stopRecordingButton.isEnabled = false // while recording has been already stopped now
